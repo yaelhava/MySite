@@ -5,12 +5,19 @@ import { useAuth } from "../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 import firebase from '@firebase/app-compat'
 import { doc, getDoc } from "firebase/firestore";
-// import db from "../firebase"
+import {auth} from "../firebase"
+// import {firebase} from '@firebase/app';
+import 'firebase/firestore';
 
 
-export default function Profile() {
+
+
+export default  function Profile() {
     const [error, setError] = useState("");
     const { currentUser } = useAuth();
+    // const { tableUser } = currentUser.uid.get;
+
+    // console.log(auth.currentUser.getIdToken.toString);
     // // **********************new*****************
     // const[currUser, setCurrUser] = useState();
 
@@ -22,27 +29,42 @@ export default function Profile() {
     //     })
     // }, [])
 
-    const [details, setDetails] = useState();
+    // const db = firebase.firestore();
+
+    // firebase.firestore.collection('users').doc().then((snapshot) =>  {
+    //     console.log(snapshot.getDoc);
+    // })
     
-    async function getUserDetails() {
-        const docRef = doc(firebase, "users", "SF");
-        const docSnap = await getDoc(docRef);
-
-        
 
 
-        if (docSnap.exists()) {
-            // setDetails(docSnap.data());
-            console.log("Document data:", docSnap.data());
-          } else {
-            // doc.data() will be undefined in this case
-            console.log("No such document!");
-            // setDetails("No such document!");
-          }
+    // firebase.firestore().collection("users").doc(firebase.auth().currentUser.uid).get()
+    // .then(document => {
+    // console.log(document.data());
+    // })
+    // .catch(error => console.error(error));
 
 
 
-    }
+
+
+
+
+    // const [details, setDetails] = useState();
+    
+    // async function getUserDetails() {
+        // const docRef = doc(firebase, "users", "SF");
+        // const docSnap = await getDoc(docRef);
+
+        // if (docSnap.exists()) {
+        //     // setDetails(docSnap.data());
+        //     console.log("Document data:", docSnap.data());
+        //   } else {
+        //     // doc.data() will be undefined in this case
+        //     console.log("No such document!");
+        //     // setDetails("No such document!");
+        //   }
+
+    // }
     // const {history} = useNavigate();
 
     // async function handleLogout(){
@@ -66,7 +88,9 @@ export default function Profile() {
                 <h2 className="text-center mb-4">Profile</h2>
                 {error && <Alert varient="danger">{error}</Alert>}
                 <strong>Email: </strong> {currentUser.email}
-                {details}
+                {/* <strong>Email: </strong> {currentUser} */}
+                <strong>ID: </strong> {currentUser.uid}
+
                 
                 </Card.Body>
             </Card>

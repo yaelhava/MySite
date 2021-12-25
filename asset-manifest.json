@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yaelhava/MySite.git/static/css/main.1a8a0596.css",
+    "main.js": "/yaelhava/MySite.git/static/js/main.be65ce63.js",
+    "index.html": "/yaelhava/MySite.git/index.html",
+    "main.1a8a0596.css.map": "/yaelhava/MySite.git/static/css/main.1a8a0596.css.map",
+    "main.be65ce63.js.map": "/yaelhava/MySite.git/static/js/main.be65ce63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.be65ce63.js"
+  ]
+}

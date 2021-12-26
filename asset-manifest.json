@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/yaelhava/MySite.git/static/css/main.1a8a0596.css",
-    "main.js": "/yaelhava/MySite.git/static/js/main.be65ce63.js",
-    "index.html": "/yaelhava/MySite.git/index.html",
-    "main.1a8a0596.css.map": "/yaelhava/MySite.git/static/css/main.1a8a0596.css.map",
-    "main.be65ce63.js.map": "/yaelhava/MySite.git/static/js/main.be65ce63.js.map"
+    "main.css": "/MySite/static/css/main.1a8a0596.css",
+    "main.js": "/MySite/static/js/main.82455bd7.js",
+    "index.html": "/MySite/index.html",
+    "main.1a8a0596.css.map": "/MySite/static/css/main.1a8a0596.css.map",
+    "main.82455bd7.js.map": "/MySite/static/js/main.82455bd7.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.be65ce63.js"
+    "static/js/main.82455bd7.js"
   ]
 }

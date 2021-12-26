@@ -8,12 +8,12 @@ export default function PrivateRoute({ component: Component, ...rest}) {
 
     return (
         <Route 
-            {...rest}>
+            {...rest}
             render={props => {
                 return currentUser ? <Component {...props} /> : <Navigate to="/login"/>
             }}
             
 
-        </Route>
+        ></Route>
     )
 }

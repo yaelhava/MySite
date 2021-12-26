@@ -5,12 +5,12 @@ import { useAuth } from "../contexts/AuthContext"
 export default function PrivateRoute({ component: Component, ...rest}) {
 
     const { currentUser } = useAuth();
-
+// currentUser ? <component {...props} /> :
     return (
         <Route 
             {...rest}>
             render={props => {
-                return currentUser ? <component {...props} /> : <Navigate to="/login"/>
+                return <Navigate to="/login"/>
             }}
             
 

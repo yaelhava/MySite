@@ -17,7 +17,7 @@ function App() {
           <Router>
           <AuthProvider>
             <Routes>
-              <Route path="/login" element={<Login />}></Route>
+              {/* <Route path="/login" element={<Login />}></Route> */}
               <Route exact path="/" element={<Profile/>}></Route>
             </Routes>
           </AuthProvider>

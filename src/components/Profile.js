@@ -11,7 +11,8 @@ export default function Profile() {
     const [error, setError] = useState("");
     const { currentUser } = useAuth();
 
-  
+    // const app = document.getElementById(currentUser.uid);
+    // console.log(app);
     
     return (
         <>

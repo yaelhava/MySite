@@ -5,8 +5,11 @@ import Login from './components/Login';
 
 
 ReactDOM.render(
+
+  
   <React.StrictMode>
-    <App />
+    <Login />
+    {/* <Redirect to="/login"/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

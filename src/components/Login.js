@@ -23,7 +23,7 @@ export default function Login() {
             setError('')
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
-            // history.push('/');
+            
             history({ pathname: '/' });
         }catch{
             setError('Failed to sign in')
@@ -31,9 +31,6 @@ export default function Login() {
         
         setLoading(false)
     }
-
-
-
 
 
     return (

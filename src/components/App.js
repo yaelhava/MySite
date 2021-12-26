@@ -27,20 +27,6 @@ function App() {
         </Container>
         
         
-
-  //       <div className="w-100" style={{ maxWidth: '400px'}}>
-  //         {/* login? */}
-  //         {/* <Router>
-  //           <AuthProvider> */}
-  //             {/* determines which route we're cuurently on */}
-  //             {/* <Routes>
-  //               <Route path="/login" component={Login}></Route>
-  //             </Routes>
-  //           </AuthProvider>
-  //         </Router> */}
-  //       </div>
-   
-  //   
   )
   
 }

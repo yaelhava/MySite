@@ -8,7 +8,7 @@ ReactDOM.render(
 
   
   <React.StrictMode>
-    <Login />
+    <App />
     {/* <Redirect to="/login"/> */}
   </React.StrictMode>,
   document.getElementById('root')

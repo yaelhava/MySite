@@ -1,12 +1,17 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { AuthProvider } from "../contexts/AuthContext";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Profile from "./Profile"
 import Login from "./Login"
 
 
 function App() {
+
+  const history = useNavigate();
+
+  history({ pathname: 'login' });
+
   return (
  
     
@@ -17,7 +22,7 @@ function App() {
           <Router>
           <AuthProvider>
             <Routes>
-              {/* <Route path="/login" element={<Login />}></Route> */}
+              <Route path="/login" element={<Login />}></Route>
               <Route exact path="/" element={<Profile/>}></Route>
             </Routes>
           </AuthProvider>

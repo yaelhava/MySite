@@ -4,6 +4,7 @@ import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Profile from "./Profile"
 import Login from "./Login"
+import PrivateRoute from "./PrivateRoute";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           <AuthProvider>
             <Routes>
               <Route path="/login" element={<Login />}></Route>
-              <Route exact path="/" element={<Profile/>}></Route>
+              <PrivateRoute exact path="/" element={<Profile/>}></PrivateRoute>
             </Routes>
           </AuthProvider>
           </Router>

@@ -23,8 +23,8 @@ function App() {
           <Router>
           <AuthProvider>
             <Routes>
-              <Route path="/login" element={<Login />}></Route>
               <PrivateRoute exact path="/" element={<Profile/>}></PrivateRoute>
+              <Route path="/login" element={<Login />}></Route>
             </Routes>
           </AuthProvider>
           </Router>

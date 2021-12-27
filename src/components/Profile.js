@@ -2,15 +2,27 @@ import React, { useState } from 'react'
 import { Card, Alert } from 'react-bootstrap'
 import { useAuth } from "../contexts/AuthContext"
 import 'firebase/firestore';
+import { useLocation } from 'react-router-dom';
+
 
 
 export default function Profile() {
     const [error, setError] = useState("");
     const { currentUser } = useAuth();
 
-    // const app = document.getElementById(currentUser.uid);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+    // const location = useLocation();
+
+
+    // const app = document.getElementById(currentUser.uid);
+    // console.log(location.state);
     
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
     return (
         <>
             <Card>

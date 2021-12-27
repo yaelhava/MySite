@@ -14,6 +14,7 @@ export default function Login() {
 
     async function handleSubmit(e){
         e.preventDefault()
+        // let isCancelled = false;
 
         if(passwordRef.current.value.length < 6){
             return setError('Password should be at least 6 characters, both letter and numbers.')
@@ -29,7 +30,10 @@ export default function Login() {
             setError('Failed to sign in')
         }
         
-        setLoading(false)
+        // if (!isCancelled) {
+            setLoading(false);
+        //   }
+       
     }
 
 

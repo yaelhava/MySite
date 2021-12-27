@@ -24,7 +24,7 @@ export default function Login() {
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
             
-            history({ pathname: '/' });
+            history({ pathname: '/profile' });
         }catch{
             setError('Failed to sign in')
         }

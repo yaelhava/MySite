@@ -10,11 +10,10 @@ export default function Login() {
     const { login } = useAuth()
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     async function handleSubmit(e){
         e.preventDefault()
-        // let isCancelled = false;
 
         if(passwordRef.current.value.length < 6){
             return setError('Password should be at least 6 characters, both letter and numbers.')
@@ -25,14 +24,12 @@ export default function Login() {
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
             
-            history({ pathname: '/profile' });
+            navigate({ pathname: '/profile' });
         }catch{
             setError('Failed to sign in')
         }
         
-        // if (!isCancelled) {
             setLoading(false);
-        //   }
        
     }
 
